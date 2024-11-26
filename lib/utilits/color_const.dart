@@ -7,7 +7,7 @@ class ColorConstants{
     static const GREYSHADE3 = Color(0xffFF3F3F3); 
      static const GREYSHADE4 = Color(0xffF626262);
      static const WHITE = Color(0xffFFFFFFF);
-     static const GREYSHADE5 = Color(0xffF575757);
+     static const TEAL = Colors.teal;
 
      
 

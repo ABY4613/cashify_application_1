@@ -1,7 +1,11 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:cashify_application_1/utilits/color_const.dart';
-import 'package:cashify_application_1/view/login_screen/login_screen.dart';
+import 'package:cashify_application_1/view/home_screen/tabs/buy_screen.dart';
+import 'package:cashify_application_1/view/home_screen/tabs/profile_screen.dart';
+import 'package:cashify_application_1/view/home_screen/tabs/repair_screen.dart';
+import 'package:cashify_application_1/view/home_screen/tabs/sell_screen.dart';
+import 'package:cashify_application_1/view/home_screen/tabs/service_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -16,12 +20,11 @@ class _BottomNavbarScreenState extends State<HomeScreen> {
     int selectindex=0;
 
   List  screens =  [
-    Container(color: Colors.white,child: Center(child: Text("asdfghjk",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),),
-    Container(color: Colors.white,child: Center(child: Text("more",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),),
-    Container(color: Colors.white,child: Center(child: Text("ggggggggggggg",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),),
-    Container(color: Colors.white,child: Center(child: Text("Comingsoon",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),),
-    Container(color: Colors.white,child: Center(child: Text("Download",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),),
-    LoginScreen(),
+    SellScreen(),  
+    BuyScreen(),
+    RepairScreen(),
+    ServicesScreen(),
+    ProfileScreen(),
   ];
 
   @override

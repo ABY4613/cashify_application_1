@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+
 import 'package:cashify_application_1/view/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen());
+      
+      home: SplashScreen()
+      );
             
   }
 }

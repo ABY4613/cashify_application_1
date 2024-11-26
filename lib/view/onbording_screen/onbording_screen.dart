@@ -14,117 +14,120 @@ class OnboardingScreen extends StatelessWidget {
     return Scaffold(
       
       backgroundColor: ColorConstants.WHITE,
-     body: Column(
-             mainAxisAlignment: MainAxisAlignment.start,
-             children: [
-               Padding(
-                 padding: const EdgeInsets.only(right: 250,  top: 120, ),
-                 child: Image.asset(
-                           ImageConstants.MYAPPLOGO,
-                           height: 100, 
-                           width: 130,
-                           fit: BoxFit.contain,
-                 ),
-               ),
-               Padding(
-                 padding: const EdgeInsets.only(right: 250),
-                 child: Text("iam here to",
-                  style: GoogleFonts.montserrat(
-                  color: ColorConstants.GREYSHADE1,
-                  fontSize: 12,
-                  fontWeight: FontWeight.bold
-                               )
-                             ),
-               ),
-               SizedBox(height: 10,),
-               Padding(
-                 padding: const EdgeInsets.all(8.0),
-                 child: Container(color:ColorConstants.GREYSHADE1,
-                   child: Row(
-                     children: [
-                       Padding(
-                         padding: const EdgeInsets.all(8.0),
-                         child: Image.asset(
-                          ImageConstants.ONBOARDING1,
+     body: SingleChildScrollView(
+    
+       child: Column(
+               mainAxisAlignment: MainAxisAlignment.start,
+               children: [
+                 Padding(
+                   padding: const EdgeInsets.only(right: 250,  top: 120, ),
+                   child: Image.asset(
+                             ImageConstants.MYAPPLOGO,
                              height: 100, 
                              width: 130,
-                              fit: BoxFit.contain,
-                                     ),
-                       ),
-                       Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                         children: [
-                           Text("data"),
-                           Text("Shop for certified refurbished  ")
-                         ],
-                       ),
-                        SizedBox(width: 10,),
-                       Icon(Icons.arrow_forward)
-                     ],
+                             fit: BoxFit.contain,
                    ),
                  ),
-               ),
-                SizedBox(height: 10,),
-               Padding(
-                 padding: const EdgeInsets.all(8.0),
-                 child: Container(color:ColorConstants.GREYSHADE1,
-                   child: Row(
-                     children: [
-                       Padding(
-                         padding: const EdgeInsets.all(8.0),
-                         child: Image.asset(
-                          ImageConstants.ONBOARDING1,
-                             height: 100, 
-                             width: 130,
-                              fit: BoxFit.contain,
-                                     ),
-                       ),
-                       Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                         children: [
-                           Text("data"),
-                           Text("Shop for certified refurbished  ")
-                         ],
-                       ),
-                        SizedBox(width: 10,),
-                       Icon(Icons.arrow_forward)
-                 
-                     ],
-                   ),
+                 Padding(
+                   padding: const EdgeInsets.only(right: 250),
+                   child: Text("iam here to",
+                    style: GoogleFonts.montserrat(
+                    color: ColorConstants.GREYSHADE1,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold
+                                 )
+                               ),
                  ),
-               ),
-                SizedBox(height: 10,),
-               Padding(
-                 padding: const EdgeInsets.all(8.0),
-                 child: Container(color:ColorConstants.GREYSHADE1,
-                   child: Row(
-                     children: [
-                       Padding(
-                         padding: const EdgeInsets.all(8.0),
-                         child: Image.asset(
-                          ImageConstants.ONBOARDING1,
-                             height: 100, 
-                             width: 130,
-                              fit: BoxFit.contain,
-                                     ),
-                       ),
-                       Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                         children: [
-                           Text("data"),
-                           Text("Shop for certified refurbished  ")
-                 
-                         ],
-                       ),
+                 SizedBox(height: 10,),
+                 Padding(
+                   padding: const EdgeInsets.all(8.0),
+                   child: Container(color:ColorConstants.GREYSHADE3,
+                     child: Row(
+                       children: [
+                         Padding(
+                           padding: const EdgeInsets.all(8.0),
+                           child: Image.asset(
+                            ImageConstants.ONBOARDING1,
+                               height: 100, 
+                               width: 130,
+                                fit: BoxFit.contain,
+                                       ),
+                         ),
+                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                           children: [
+                             Text("data"),
+                             Text("Shop certified refurbished ")
+                           ],
+                         ),
                           SizedBox(width: 10,),
-                       Icon(Icons.arrow_forward)
-                     ],
+                         Icon(Icons.arrow_forward)
+                       ],
+                     ),
                    ),
                  ),
-               ),
-               
-             ],
-           ),
+                  SizedBox(height: 10,),
+                 Padding(
+                   padding: const EdgeInsets.all(8.0),
+                   child: Container(color:ColorConstants.GREYSHADE3,
+                     child: Row(
+                       children: [
+                         Padding(
+                           padding: const EdgeInsets.all(8.0),
+                           child: Image.asset(
+                            ImageConstants.ONBOARDING1,
+                               height: 100, 
+                               width: 130,
+                                fit: BoxFit.contain,
+                                       ),
+                         ),
+                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                           children: [
+                             Text("data"),
+                             Text("Shop certified refurbished")
+                           ],
+                         ),
+                          SizedBox(width: 10,),
+                         Icon(Icons.arrow_forward)
+                   
+                       ],
+                     ),
+                   ),
+                 ),
+                  SizedBox(height: 10,),
+                 Padding(
+                   padding: const EdgeInsets.all(8.0),
+                   child: Container(color:ColorConstants.GREYSHADE3,
+                     child: Row(
+                       children: [
+                         Padding(
+                           padding: const EdgeInsets.all(8.0),
+                           child: Image.asset(
+                            ImageConstants.ONBOARDING1,
+                               height: 100, 
+                               width: 130,
+                                fit: BoxFit.contain,
+                                       ),
+                         ),
+                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                           children: [
+                             Text("data"),
+                             Text("Shop certified refurbished ")
+                   
+                           ],
+                         ),
+                            SizedBox(width: 10,),
+                         Icon(Icons.arrow_forward)
+                       ],
+                     ),
+                   ),
+                 ),
+                 
+               ],
+             ),
+     ),
           
         
       
